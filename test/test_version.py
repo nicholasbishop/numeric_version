@@ -28,6 +28,9 @@ class TestVersion(unittest.TestCase):
     def test_string(self):
         self.assertEqual(str(NumericVersion(1, 2, 3)), '1.2.3')
 
+    def test_repr(self):
+        self.assertEqual(repr(NumericVersion(1, 2, 3)), 'NumericVersion(1.2.3)')
+
     def test_eq(self):
         self.assertEqual(NumericVersion(1, 2, 3),
                          NumericVersion(1, 2, 3))

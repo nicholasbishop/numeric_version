@@ -46,6 +46,9 @@ class NumericVersion(object):
     def __str__(self):
         return '.'.join(str(part) for part in self.parts)
 
+    def __repr__(self):
+        return '{}({})'.format(self.__class__.__name__, str(self))
+
     def __eq__(self, other):
         return self.parts == other.parts
 
