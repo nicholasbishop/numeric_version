@@ -19,6 +19,10 @@ VENV ?= venv
 all: lint test
 
 
+clean:
+	rm -rf build/ dist/
+
+
 dist:
 	python setup.py bdist_wheel --universal
 
@@ -31,4 +35,4 @@ test:
 	${VENV}/bin/python -m unittest discover
 
 
-.PHONY: all dist lint test
+.PHONY: all clean dist lint test
