@@ -20,8 +20,9 @@ import setuptools
 
 setuptools.setup(
     name='numeric_version',
-    version='1.0.0',
+    version='1.0.1',
     description='Very simple module with a numeric version class',
+    url='https://github.com/nicholasbishop/numeric_version',
     author='Nicholas Bishop',
     author_email='nicholasbishop@gmail.com',
     license='Apache 2.0',
