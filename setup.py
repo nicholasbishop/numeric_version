@@ -20,7 +20,7 @@ import setuptools
 
 setuptools.setup(
     name='numeric_version',
-    version='1.0.1',
+    version='1.0.2',
     description='Very simple module with a numeric version class',
     url='https://github.com/nicholasbishop/numeric_version',
     author='Nicholas Bishop',

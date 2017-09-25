@@ -51,3 +51,6 @@ class NumericVersion(object):
 
     def __lt__(self, other):
         return self.parts < other.parts
+
+    def __len__(self):
+        return len(self.parts)

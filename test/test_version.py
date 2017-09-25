@@ -46,6 +46,9 @@ class TestVersion(unittest.TestCase):
         self.assertGreater(NumericVersion(2, 1, 0),
                            NumericVersion(1, 2, 3))
 
+    def test_len(self):
+        self.assertEqual(len(NumericVersion(1, 1, 1)), 3)
+
 
 if __name__ == '__main__':
     unittest.main()
